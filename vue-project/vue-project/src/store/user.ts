@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 
-export const useUserStore = defineStore("userStore", {
+export const userStore = defineStore("userStore", {
     actions: {
         changeUsername(value: string) {
             if (value && value.length < 10) {
